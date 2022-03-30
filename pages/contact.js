@@ -39,13 +39,11 @@ export default function Contact() {
       //set an error banner here
     } else {
       resetForm();
-      console.log("form submitted successfully !!!")
       //set a success banner here
     }
     //check response, if success is false, dont take them to success page
     } catch (error) {
       console.log("there was an error submitting", error);
-
     }
   }
 
