@@ -24,28 +24,28 @@ export default function Contact() {
           fields: [
             {
               name: "Name",
-              value: firstName
+              value: firstName,
             },
             {
               name: "Discord Handle",
-              value: discordHandle
+              value: discordHandle,
             },
             {
               name: "Social Handle",
-              value: twitterHandle
+              value: twitterHandle,
             },
             {
               name: "Subject",
-              value: subject
+              value: subject,
             },
             {
               name: "Message",
-              value: message
-            }
-          ]
-        }
-      ]
-    }
+              value: message,
+            },
+          ],
+        },
+      ],
+    };
     try {
       const response = await fetch("/api/inquiry", {
         method: "POST",
@@ -57,7 +57,6 @@ export default function Contact() {
         //set an error banner here
       } else {
         resetForm();
-        console.log("form submitted successfully !!!");
         //set a success banner here
       }
       // check response, if success is false, dont take them to success page
@@ -110,125 +109,102 @@ export default function Contact() {
           </ul>
         </header>
 
-          <form
-            action="#"
-            method="POST"
-            onSubmit={(e) => handleSubmit(e)}
-            className={styles.contactForm}
-          >
-            <div >
-              <label
-                htmlFor="first-name"
-              >
-                Name (or nickname)
-              </label>
-              <div>
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  onChange={(e) => setFirstName(e.target.value)}
-                  value={firstName}
+        <form
+          action="#"
+          method="POST"
+          onSubmit={(e) => handleSubmit(e)}
+          className={styles.contactForm}
+        >
+          <div>
+            <label htmlFor="first-name">Name (or nickname)</label>
+            <div>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                onChange={(e) => setFirstName(e.target.value)}
+                value={firstName}
                 className={styles.contactFormInput}
                 required
-                />
-              </div>
+              />
+            </div>
           </div>
-        
+
           <div>
-              <label
-                htmlFor="discordHandle"
-              >
-                Discord Handle
-              </label>
-              <div>
-                <input
-                  id="discordHandle"
-                  name="discordHandle"
-                  type="text"
-                  onChange={(e) => setDiscordHandle(e.target.value)}
+            <label htmlFor="discordHandle">Discord Handle</label>
+            <div>
+              <input
+                id="discordHandle"
+                name="discordHandle"
+                type="text"
+                onChange={(e) => setDiscordHandle(e.target.value)}
                 value={discordHandle}
                 className={styles.contactFormInput}
                 required
-                />
-              </div>
+              />
+            </div>
           </div>
 
           <div>
-          <div className={styles.labelContainer}>
-              <label
-                htmlFor="twitterHandle"
-              >
+            <div className={styles.labelContainer}>
+              <label htmlFor="twitterHandle">
                 Social Handle (Twitter, Github, etc.)
               </label>
               <div>(optional)</div>
-              </div>
-              <div>
-                <input
-                  id="twitterHandle"
-                  name="twitterHandle"
-                  type="text"
-                  onChange={(e) => setTwitterHandle(e.target.value)}
+            </div>
+            <div>
+              <input
+                id="twitterHandle"
+                name="twitterHandle"
+                type="text"
+                onChange={(e) => setTwitterHandle(e.target.value)}
                 value={twitterHandle}
                 className={styles.contactFormInput}
-                />
-              </div>
+              />
+            </div>
           </div>
 
+          <div>
+            <label htmlFor="subject">Subject</label>
             <div>
-              <label
-                htmlFor="subject"
-              >
-                Subject
-              </label>
-              <div>
-                <input
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  onChange={(e) => setSubject(e.target.value)}
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                onChange={(e) => setSubject(e.target.value)}
                 value={subject}
                 className={styles.contactFormInput}
                 required
-                />
-              </div>
+              />
+            </div>
+          </div>
+          <div>
+            <div className={styles.labelContainer}>
+              <label htmlFor="message">Message</label>
+              <div className={styles.messageMax}>Max. 500 characters</div>
             </div>
             <div>
-              <div className={styles.labelContainer}>
-                <label
-                  htmlFor="message"
-                >
-                  Message
-                </label>
-              <div className={styles.messageMax}>
-                  Max. 500 characters
-                </div>
-              </div>
-              <div>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  onChange={(e) => setMessage(e.target.value)}
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                onChange={(e) => setMessage(e.target.value)}
                 value={message}
                 className={styles.contactFormInput}
                 aria-describedby="message-max"
                 placeholder="Please tell us a little about who you are"
                 required
-                />
-              </div>
+              />
             </div>
-            <div className={styles.submitButtonContainer}>
-              <button
-              type="submit"
-              className={styles.submitButton}
-              >
-                Submit
-              </button>
-            </div>
-          </form>
+          </div>
+          <div className={styles.submitButtonContainer}>
+            <button type="submit" className={styles.submitButton}>
+              Submit
+            </button>
+          </div>
+        </form>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
