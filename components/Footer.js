@@ -77,6 +77,11 @@ export default function Footer({ preferedColorScheme }) {
             >
               Blog
             </a>
+            <Link href="/members">
+              <a className="max-w-[160px] hover:underline hover:decoration-wavy">
+                Members
+              </a>
+            </Link>
           </div>
           <div className="flex flex-col gap-4">
             <h6 className="font-poppins-bold">Get in Touch</h6>
