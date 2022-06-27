@@ -14,6 +14,7 @@ import Meowkun from "../assets/images/meowkun.jpg";
 import Paloma from "../assets/images/Paloma.jpg";
 import Pariwash from "../assets/images/PARIWASHDURRANI.jpg";
 import SamCeja from "../assets/images/SamCeja.png";
+import Sarah from "../assets/images/sarahz.png";
 import Terppps from "../assets/images/terppps.jpg";
 import Tomilayo from "../assets/images/Tomilayo.jpg";
 import Tracy from "../assets/images/tracy.jpg";
@@ -114,6 +115,12 @@ export const Members = [
     name: "SamCeja",
     description: "Frontend Developer / Developer Relations",
     twitterHandle: "iamsamcodes",
+  },
+  {
+    image: Sarah,
+    name: "Sarah",
+    description: "Frontend Engineer / Product Lead",
+    twitterHandle: "haegeez",
   },
   {
     image: Terppps,
