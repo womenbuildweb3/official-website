@@ -25,7 +25,7 @@ const MemberCard = ({ name, image, description, twitterHandle }) => {
               <a
                 href={`https://twitter.com/${twitterHandle}`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
                 className="text-gray-400 hover:text-gray-500"
               >
                 <span className="sr-only">Twitter</span>
