@@ -1,15 +1,18 @@
+import Image from 'next/image';
+
 const MemberCard = ({ name, image, description, twitterHandle }) => {
   console.log(image);
   console.log(twitterHandle);
   return (
     <li>
       <div className="space-y-4">
-        <div className="aspect-w-3 aspect-h-2">
-          <img
-            className="object-cover shadow-lg rounded-lg w-80 h-80"
-            src={image.src}
-            alt="member-image"
-          />
+        <div className="aspect-w-3 aspect-h-2 shadow-lg rounded-lg w-80 h-80 relative overflow-hidden">
+          <Image
+              src={image.src}
+              alt="member-image"
+              objectFit="cover"
+              layout="fill"
+            />
         </div>
 
         <div className="space-y-2">
@@ -22,6 +25,7 @@ const MemberCard = ({ name, image, description, twitterHandle }) => {
               <a
                 href={`https://twitter.com/${twitterHandle}`}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-500"
               >
                 <span className="sr-only">Twitter</span>
