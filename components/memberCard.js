@@ -1,24 +1,24 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const MemberCard = ({ name, image, description, twitterHandle }) => {
-  console.log(image);
-  console.log(twitterHandle);
+  // console.log(image);
+  // console.log(twitterHandle);
   return (
     <li>
       <div className="space-y-4">
         <div className="aspect-w-3 aspect-h-2 shadow-lg rounded-lg w-80 h-80 relative overflow-hidden">
           <Image
-              src={image.src}
-              alt="member-image"
-              objectFit="cover"
-              layout="fill"
-            />
+            src={image.src}
+            alt="member-image"
+            objectFit="cover"
+            layout="fill"
+          />
         </div>
 
         <div className="space-y-2">
           <div className="text-lg leading-6 font-medium space-y-1">
-            <h3>{name}</h3>
-            <p className="text-indigo-600">{description}</p>
+            <h3 className="font-poppins-semi-bold">{name}</h3>
+            <p className="text-gray-200">{description}</p>
           </div>
           <ul role="list" className="flex space-x-5">
             <li>
