@@ -61,6 +61,11 @@ export default function Navbar({ preferedColorScheme }) {
                 >
                   Blog
                 </a>
+                <Link href="/members">
+                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                    Members
+                  </a>
+                </Link>
               </div>
               <div className="hidden md:flex items-center">
                 <Link href="/contact">
@@ -130,6 +135,13 @@ export default function Navbar({ preferedColorScheme }) {
                 className="active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
               >
                 Blog
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="/members"
+                className="active:bg-black px-3 py-2 rounded-md text-sm font-medium hover:bg-black hover:text-white"
+              >
+                Members
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
