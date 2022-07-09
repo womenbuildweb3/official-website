@@ -1,3 +1,5 @@
+import Afoma from "../assets/images/Afoma.jpg";
+import Angela from "../assets/images/angela-nachoshaman.jpeg";
 import Avni from "../assets/images/Avni.jpg";
 import Brenda from "../assets/images/brenda.jpg";
 import Busayo from "../assets/images/busayo.jpg";
@@ -20,6 +22,18 @@ import Tomilayo from "../assets/images/Tomilayo.jpg";
 import Tracy from "../assets/images/tracy.jpg";
 
 export const Members = [
+  {
+    image: Afoma,
+    name: "Afoma Orji",
+    description: "Software Engineer / Technical Writer",
+    twitterHandle: "afoma_orji",
+  },
+  {
+    image: Angela,
+    name: "Angela",
+    description: "Backend Engineer / Web3 Developer",
+    twitterHandle: "nachoshaman",
+  },
   {
     image: Avni,
     name: "Avni Agrawal",
