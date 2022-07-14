@@ -44,17 +44,17 @@ export default function Navbar({ preferedColorScheme }) {
               )}
               <div className="hidden md:flex items-center">
                 <Link href="/about">
-                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full lg:text-xl  hover:decoration-wavy">
                     About
                   </a>
                 </Link>
                 <Link href="/#30dw3">
-                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full lg:text-xl  hover:decoration-wavy">
                     30 Days of Web3
                   </a>
                 </Link>
                 <a
-                  className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy"
+                  className="px-3 py-2 rounded-full lg:text-xl  hover:decoration-wavy"
                   target="_blank"
                   href="https://womenbuildweb3.hashnode.dev/"
                   rel="noopener noreferrer"
@@ -62,14 +62,14 @@ export default function Navbar({ preferedColorScheme }) {
                   Blog
                 </a>
                 <Link href="/members">
-                  <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 rounded-full lg:text-xl  hover:decoration-wavy">
                     Members
                   </a>
                 </Link>
               </div>
               <div className="hidden md:flex items-center">
                 <Link href="/contact">
-                  <a className="px-3 py-2 mr-2 rounded-full lg:text-xl font-medium hover:underline hover:decoration-wavy">
+                  <a className="px-3 py-2 mr-2 rounded-full lg:text-xl font-medium  hover:decoration-wavy">
                     Contact
                   </a>
                 </Link>
