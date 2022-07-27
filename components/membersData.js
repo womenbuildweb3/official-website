@@ -138,8 +138,8 @@ export const Members = [
   },
   {
     image: Terppps,
-    name: "Terppps",
-    description: "Engineering Lead",
+    name: "Sarah Schwartz",
+    description: "Engineering Lead / Software Engineer",
     twitterHandle: "schwartzswartz",
   },
   {
