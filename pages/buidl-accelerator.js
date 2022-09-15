@@ -260,7 +260,7 @@ export default function About() {
         </p>
         <div className="mt-8 w-ful flex justify-center">
           <Link href="/about">
-            <a className="text-lg border-t-2 border-dotted px-32 pt-4">
+            <a className="text-lg border-t-2 border-dotted px-4 sm:px-16 md:px-32 pt-4">
               Click to learn more...
             </a>
           </Link>
