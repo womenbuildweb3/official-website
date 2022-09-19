@@ -34,56 +34,69 @@ export default function Accelerator() {
         )}
       </Head>
       <Navbar preferedColorScheme={preferedColorScheme} />
-      <header className="my-40 sm:my-44 max-w-6xl mx-auto">
-        <h1 className="font-poppins-bold text-5xl lg:text-6xl leading-tight mb-4">
-          WBW3 PRESENTS
-        </h1>
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl leading-tight mb-12">
-          BUIDL ACCELERATOR PROGRAM
-        </h2>
-        <a
-          href="https://form.typeform.com/to/rXJh1w4H"
-          className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border-8 border-black dark:border-white border-solid rounded-3xl text-2xl lg:text-3xl px-16 py-2"
-        >
-          APPLY NOW
-        </a>
+      <header className="my-8 sm:my-32 max-w-6xl mx-auto flex flex-wrap-reverse md:flex-nowrap gap-4 justify-center items-center">
+        <div>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl leading-tight mb-4">
+            WBW3 PRESENTS
+          </h1>
+          <h2 className="font-poppins-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 md:mb-12">
+            BUIDL ACCELERATOR
+          </h2>
+          <a
+            href="https://form.typeform.com/to/rXJh1w4H"
+            className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border-4 border-black dark:border-white border-solid rounded-3xl text-xl md:text-2xl lg:text-3xl px-16 py-2"
+          >
+            APPLY NOW
+          </a>
+        </div>
+        <div className="w-40 h-40 md:w-96 md:h-96 relative mb-4 md:mb-0">
+          <Image
+            src="/images/rocket.png"
+            alt="rocket"
+            objectFit="cover"
+            layout="fill"
+          />
+        </div>
       </header>
 
       <section className="mb-12 flex flex-col sm:flex-row justify-around gap-4 max-w-6xl mx-auto">
-        <div className="sm:w-1/2 text-2xl bg-zinc-800 rounded-lg p-8">
-          <p>
-            <span className="font-poppins-semi-bold">Our mission:</span> To help
-            the best women and non-binary built hackathon and early-stage
-            projects through support and direct funding.
+        <div className="sm:w-1/2 bg-zinc-800 rounded-lg p-8">
+          <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
+            OUR WHY
+          </div>
+          <h2 className="font-poppins-semi-bold text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-8">
+            Our Mission
+          </h2>
+          <p className="text-base md:text-lg">
+            To help the best women and non-binary built hackathon and
+            early-stage projects through support and direct funding.
           </p>
         </div>
 
-        <div className="sm:w-1/2 text-2xl bg-zinc-800 rounded-lg p-8">
+        <div className="sm:w-1/2 text-lg md:text-xl lg:text-2xl bg-zinc-800 rounded-lg p-8">
           <p className="mb-4 text-center font-poppins-semi-bold">
             Accelerator powered by
           </p>
-          <div className="flex justify-around">
-            <div>
+          <div className="flex flex-wrap md:flex-nowrap justify-center items-center justify-around space-y-8 md:space-y-0">
+            <div className="flex flex-col items-center">
               <Image
-                className=""
-                alt="Women Build Web3 Logo"
+                alt="Encode Logo"
                 src="/logos/encode_club_white.svg"
-                height="114px"
-                width="114px"
+                height="128px"
+                width="128px"
               />
-              <p className="text-center text-sm font-poppins-semi-bold">
+              <p className="text-center text-sm font-poppins-semi-bold mt-4">
                 Encode Club
               </p>
             </div>
-            <div>
+            <div className="flex flex-col items-center">
               <Image
-                className=""
                 alt="Women Build Web3 Logo"
                 src="/logos/logo-white.png"
-                height="114px"
-                width="114px"
+                height="128px"
+                width="128px"
               />
-              <p className="text-center text-sm font-poppins-semi-bold">
+              <p className="text-center text-sm font-poppins-semi-bold mt-4">
                 Women Build Web3
               </p>
             </div>
@@ -92,13 +105,13 @@ export default function Accelerator() {
       </section>
 
       <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
-        <div className="text-dark-teal font-poppins-bold text-xl sm:text-3xl mb-2 sm:mb-4">
-          INFORMATION
+        <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
+          ABOUT
         </div>
-        <h2 className="font-poppins-semi-bold text-4xl sm:text-5xl mb-4 sm:mb-8">
+        <h2 className="font-poppins-semi-bold text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-8">
           What is it?
         </h2>
-        <p className="text-lg">
+        <p className="text-base md:text-lg">
           The <span className="font-poppins-semi-bold">BUIDL Accelerator</span>{" "}
           aims to support projects where 51% or more of the technical team are
           women and non-binary people. This no-strings-attached accelerator will
@@ -114,7 +127,7 @@ export default function Accelerator() {
           <div className="text-dark-teal font-poppins-bold">
             Applications open
           </div>
-          <div className="text-lg md:text-2xl font-poppins-semi-bold">
+          <div className="text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             SEPTEMBER 25TH
           </div>
         </div>
@@ -123,7 +136,7 @@ export default function Accelerator() {
           <div className="text-dark-teal font-poppins-bold">
             Accelerator begins
           </div>
-          <div className="text-lg md:text-2xl font-poppins-semi-bold">
+          <div className="text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             OCTOBER 6TH
           </div>
         </div>
@@ -132,24 +145,24 @@ export default function Accelerator() {
           <div className="text-dark-teal font-poppins-bold">
             Accelerator ends
           </div>
-          <div className="text-lg md:text-2xl font-poppins-semi-bold">
+          <div className="text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             DECEMBER 22ND
           </div>
         </div>
       </section>
 
       <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
-        <div className="text-dark-teal font-poppins-bold text-xl sm:text-3xl mb-2 sm:mb-4">
-          INFORMATION
+        <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
+          FOR YOU
         </div>
-        <h2 className="font-poppins-semi-bold text-4xl sm:text-5xl mb-4 sm:mb-8">
+        <h2 className="font-poppins-semi-bold text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-8">
           Who can apply?
         </h2>
-        <p className="text-lg">
+        <p className="text-base md:text-lg mb-2">
           Be purr-pared! The following requirements must be met for an
           application to be considered eligible:
         </p>
-        <ul className="list-disc text-lg pl-8">
+        <ul className="list-disc text-base md:text-lg pl-8 space-y-2">
           <li>
             Completion of the 30 Days of Web3 program prior to September 16th
           </li>
@@ -161,45 +174,48 @@ export default function Accelerator() {
       </section>
 
       <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
-        <h2 className="mb-8 text-4xl md:text-5xl text-dark-teal font-poppins-semi-bold">
+        <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
+          JOIN US
+        </div>
+        <h2 className="font-poppins-semi-bold text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-8">
           Why you should apply:
         </h2>
 
-        <div className="flex flex-col md:flex-row gap-8 justify-between border-b-2 border-white pb-12 mb-12">
-          <h3 className="w-1/2 text-5xl font-poppins-semi-bold">
+        <div className="flex flex-col md:flex-row gap-8 justify-between border-y-2 border-white py-12 mb-12">
+          <h3 className="w-1/2 text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             Global Community
           </h3>
-          <p className="text-lg md:w-1/2">
+          <p className="text-base md:text-lg md:w-1/2">
             We work directly with our community of developers from around the
             world to identify promising early-stage projects.
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 justify-between border-b-2 border-white pb-12 mb-12">
-          <h3 className="w-1/2 text-5xl font-poppins-semi-bold">
+          <h3 className="w-1/2 text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             Dedicated Curriculum
           </h3>
-          <p className="text-lg md:w-1/2 ">
+          <p className="text-base md:text-lg md:w-1/2 ">
             We’re here to support our founders through a series of 12 workshops
             covering impactful topics.
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 justify-between border-b-2 border-white pb-12 mb-12">
-          <h3 className="w-1/2 text-5xl font-poppins-semi-bold">
+          <h3 className="w-1/2 text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             Virtual Events
           </h3>
-          <p className="text-lg md:w-1/2">
+          <p className="text-base md:text-lg md:w-1/2">
             The events take place virtually, insuring that the Accelerator is
             accessible to teams all across the globe!
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 justify-between">
-          <h3 className="w-1/2 text-5xl font-poppins-semi-bold">
+          <h3 className="w-1/2 text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             Weekly Sessions
           </h3>
-          <p className="text-lg md:w-1/2">
+          <p className="text-base md:text-lg md:w-1/2">
             We host weekly workshops and one-on-one sessions with our founders
             and their teams over this 12-week accelerator.
           </p>
@@ -208,10 +224,11 @@ export default function Accelerator() {
 
       <section className="pt-8 mb-12 max-w-6xl mx-auto flex flex-col sm:flex-row gap-8">
         <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/2">
-          <h3 className="mb-4 text-xl md:text-2xl font-poppins-semi-bold">
+          <h3 className="mb-4 text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             Overview:
           </h3>
-          <ul className="list-disc pl-8 md:text-lg">
+
+          <ul className="list-disc pl-8 text-base md:text-lg">
             <li className="mb-4">
               Accelerate your project to become a startup
             </li>
@@ -231,10 +248,10 @@ export default function Accelerator() {
         </div>
 
         <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/2">
-          <h3 className="mb-4 text-xl md:text-2xl font-poppins-semi-bold">
+          <h3 className="mb-4 text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             Workshops:
           </h3>
-          <ul className="list-disc pl-8 md:text-lg">
+          <ul className="list-disc pl-8 text-base md:text-lg">
             <li className="mb-4">Welcome</li>
             <li className="mb-4">Startup Method</li>
             <li className="mb-4">Design</li>
@@ -252,13 +269,13 @@ export default function Accelerator() {
       </section>
 
       <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
-        <div className="text-dark-teal font-poppins-bold text-xl sm:text-3xl mb-2 sm:mb-4">
+        <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
           WHO WE ARE
         </div>
-        <h2 className="font-poppins-semi-bold text-4xl sm:text-5xl mb-4 sm:mb-8">
-          About Women Build Web3
+        <h2 className="font-poppins-semi-bold text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-8">
+          Women Build Web3
         </h2>
-        <p className="text-lg">
+        <p className="text-base md:text-lg">
           Women Build Web3 is a global collective of women and non-binary
           developers learning and building in web3. We help developers unlock
           their potential by providing education, opportunities, and funding and
@@ -266,7 +283,7 @@ export default function Accelerator() {
         </p>
         <div className="mt-8 w-ful flex justify-center">
           <Link href="/about">
-            <a className="text-lg border-t-2 border-dotted px-4 sm:px-16 md:px-32 pt-4">
+            <a className="text-base md:text-lg border-t-2 border-dotted px-4 sm:px-16 md:px-32 pt-4">
               Learn more
             </a>
           </Link>
@@ -274,13 +291,13 @@ export default function Accelerator() {
       </section>
 
       <section className="pt-8 mb-6 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
-        <div className="text-dark-teal font-poppins-bold text-xl sm:text-3xl mb-2 sm:mb-4">
+        <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
           OUR TRUSTED PARTNER
         </div>
-        <h2 className="font-poppins-semi-bold text-4xl sm:text-5xl mb-4 sm:mb-8">
-          About Encode
+        <h2 className="font-poppins-semi-bold text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-8">
+          Encode
         </h2>
-        <p className="text-lg">
+        <p className="text-base md:text-lg">
           Encode is a web3 education community. We help ambitious, talented
           people achieve their personal and professional goals together. We do
           this through awesome programmes with the leading protocols in crypto.
@@ -289,7 +306,7 @@ export default function Accelerator() {
         <div className="mt-8 w-ful flex justify-center">
           <a
             href="https://www.encode.club/accelerate"
-            className="text-lg border-t-2 border-dotted px-4 sm:px-16 md:px-32 pt-4"
+            className="text-base md:text-lg border-t-2 border-dotted px-4 sm:px-16 md:px-32 pt-4"
           >
             Learn more
           </a>
