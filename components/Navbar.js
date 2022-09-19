@@ -48,19 +48,19 @@ export default function Navbar({ preferedColorScheme }) {
                     About
                   </a>
                 </Link>
-                <Link href="/#30dw3">
+                <Link href="/accelerator">
                   <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
-                    30 Days of Web3
+                    BUIDL Accelerator
                   </a>
                 </Link>
-                <a
+                {/* <a
                   className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy"
                   target="_blank"
                   href="https://womenbuildweb3.hashnode.dev/"
                   rel="noopener noreferrer"
                 >
                   Blog
-                </a>
+                </a> */}
                 <Link href="/members">
                   <a className="px-3 py-2 rounded-full lg:text-xl hover:underline hover:decoration-wavy">
                     Members

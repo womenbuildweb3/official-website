@@ -6,7 +6,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
-export default function About() {
+export default function Accelerator() {
   const [preferedColorScheme, setPreferedColorScheme] = useState("light");
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function About() {
   return (
     <Layout>
       <Head>
-        <title>About | Women Build Web3</title>
+        <title>BUIDL Accelerator | Women Build Web3</title>
         <meta
           name="description"
           content="Providing education, oppportunities, and funding to a new wave of web3 builders"
@@ -41,12 +41,12 @@ export default function About() {
         <h2 className="text-3xl sm:text-5xl lg:text-6xl leading-tight mb-12">
           BUIDL ACCELERATOR PROGRAM
         </h2>
-        {/* TO DO: change link to application */}
-        <Link href="/buidl-accelerator" passHref>
-          <a className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border-8 border-black dark:border-white border-solid rounded-3xl text-2xl lg:text-3xl px-16 py-2">
-            APPLY
-          </a>
-        </Link>
+        <a
+          href="https://form.typeform.com/to/rXJh1w4H"
+          className="dark:hover:text-black dark:hover:bg-white hover:text-white hover:bg-black border-8 border-black dark:border-white border-solid rounded-3xl text-2xl lg:text-3xl px-16 py-2"
+        >
+          APPLY NOW
+        </a>
       </header>
 
       <section className="mb-12 flex flex-col sm:flex-row justify-around gap-4 max-w-6xl mx-auto">
@@ -99,7 +99,7 @@ export default function About() {
           What is it?
         </h2>
         <p className="text-lg">
-          The <span className="font-poppins-semi-bold">Buidl Accelerator</span>{" "}
+          The <span className="font-poppins-semi-bold">BUIDL Accelerator</span>{" "}
           aims to support projects where 51% or more of the technical team are
           women and non-binary people. This no-strings-attached accelerator will
           provide funding starting at $5K, and up to $30K per team, distributed
@@ -111,23 +111,29 @@ export default function About() {
 
       <section className="pt-8 mb-12 max-w-6xl mx-auto flex flex-col sm:flex-row justify-between gap-4">
         <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/3 flex flex-col">
-          <div className="text-dark-teal font-poppins-bold">SEPTEMBER 25TH</div>
-          <div className="text-lg md:text-2xl font-poppins-semi-bold">
+          <div className="text-dark-teal font-poppins-bold">
             Applications open
           </div>
-        </div>
-
-        <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/3 flex flex-col">
-          <div className="text-dark-teal font-poppins-bold">OCTOBER 6TH</div>
           <div className="text-lg md:text-2xl font-poppins-semi-bold">
-            Accelerator begins
+            SEPTEMBER 25TH
           </div>
         </div>
 
         <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/3 flex flex-col">
-          <div className="text-dark-teal font-poppins-bold">DECEMBER 22ND</div>
+          <div className="text-dark-teal font-poppins-bold">
+            Accelerator begins
+          </div>
           <div className="text-lg md:text-2xl font-poppins-semi-bold">
+            OCTOBER 6TH
+          </div>
+        </div>
+
+        <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/3 flex flex-col">
+          <div className="text-dark-teal font-poppins-bold">
             Accelerator ends
+          </div>
+          <div className="text-lg md:text-2xl font-poppins-semi-bold">
+            DECEMBER 22ND
           </div>
         </div>
       </section>
@@ -247,7 +253,7 @@ export default function About() {
 
       <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
         <div className="text-dark-teal font-poppins-bold text-xl sm:text-3xl mb-2 sm:mb-4">
-          INFORMATION
+          WHO WE ARE
         </div>
         <h2 className="font-poppins-semi-bold text-4xl sm:text-5xl mb-4 sm:mb-8">
           About Women Build Web3
@@ -261,7 +267,7 @@ export default function About() {
         <div className="mt-8 w-ful flex justify-center">
           <Link href="/about">
             <a className="text-lg border-t-2 border-dotted px-4 sm:px-16 md:px-32 pt-4">
-              Click to learn more...
+              Learn more
             </a>
           </Link>
         </div>
@@ -269,7 +275,7 @@ export default function About() {
 
       <section className="pt-8 mb-6 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
         <div className="text-dark-teal font-poppins-bold text-xl sm:text-3xl mb-2 sm:mb-4">
-          INFORMATION
+          OUR TRUSTED PARTNER
         </div>
         <h2 className="font-poppins-semi-bold text-4xl sm:text-5xl mb-4 sm:mb-8">
           About Encode
@@ -281,9 +287,12 @@ export default function About() {
           We then help you get a job or raise funding.
         </p>
         <div className="mt-8 w-ful flex justify-center">
-            <a href="https://www.encode.club/accelerate" className="text-lg border-t-2 border-dotted px-4 sm:px-16 md:px-32 pt-4">
-              Click to learn more...
-            </a>
+          <a
+            href="https://www.encode.club/accelerate"
+            className="text-lg border-t-2 border-dotted px-4 sm:px-16 md:px-32 pt-4"
+          >
+            Learn more
+          </a>
         </div>
       </section>
 

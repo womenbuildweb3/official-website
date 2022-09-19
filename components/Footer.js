@@ -64,9 +64,9 @@ export default function Footer({ preferedColorScheme }) {
 
           <div className="flex mb-8 sm:mb-0 flex-col gap-4">
             <h6 className="font-poppins-bold">Learn {"&"} Build</h6>
-            <Link href="/#30dw3">
+            <Link href="/accelerator">
               <a className="max-w-[160px] hover:underline hover:decoration-wavy">
-                30 Days of Web3
+                BUIDL Accelerator
               </a>
             </Link>
             <a
