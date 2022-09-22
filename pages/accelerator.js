@@ -226,7 +226,7 @@ export default function Accelerator() {
 
           <ul className="list-disc pl-8 text-base md:text-lg">
             <li className="mb-4">
-              We just want to fund dope shit. That's it. That's the tweet.
+              We just want to fund dope shit. That&apos;s it. That&apos;s the tweet.
             </li>
             <li className="mb-4">Weekly workshops and one-on-one sessions</li>
             <li className="mb-4">
