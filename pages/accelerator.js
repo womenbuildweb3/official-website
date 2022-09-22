@@ -68,8 +68,7 @@ export default function Accelerator() {
             Our Mission
           </h2>
           <p className="text-base md:text-lg">
-            To help the best women and non-binary built hackathon and
-            early-stage projects through support and direct funding.
+            Provide direct funding and resources to women and nonbinary engineers working on dope shit.
           </p>
         </div>
 
@@ -113,10 +112,10 @@ export default function Accelerator() {
         </h2>
         <p className="text-base md:text-lg">
           The <span className="font-poppins-semi-bold">BUIDL Accelerator</span>{" "}
-          aims to support projects where 51% or more of the technical team are
+          aims to support projects where 50% or more of the technical team are
           women and non-binary people. This no-strings-attached accelerator will
           provide funding starting at $5K, and up to $30K per team, distributed
-          as they meet self-defined milestones. This 3-month accelerator is open
+          as they meet self-defined milestones. This accelerator is open
           to teams and projects that have not raised significant VC funding.
           Projects can be new or existing.
         </p>
@@ -159,16 +158,14 @@ export default function Accelerator() {
           Who can apply?
         </h2>
         <p className="text-base md:text-lg mb-2">
-          Be purr-pared! The following requirements must be met for an
-          application to be considered eligible:
+          Be purr-pared! Teams must have at least 50% of their technical team identify as women or nonbinary. Additionally, teams must meet one of the following to be considered eligible:
         </p>
         <ul className="list-disc text-base md:text-lg pl-8 space-y-2">
           <li>
-            Completion of the 30 Days of Web3 program prior to September 16th
+            Completion of the 30 Days of Web3 program prior to September 22nd.
           </li>
           <li>
-            Eligible applicants must have teams comprised of 51% women and
-            non-binary people
+            Have an existing project to be reviewed for technical assessment. 
           </li>
         </ul>
       </section>
@@ -216,8 +213,7 @@ export default function Accelerator() {
             Weekly Sessions
           </h3>
           <p className="text-base md:text-lg md:w-1/2">
-            We host weekly workshops and one-on-one sessions with our founders
-            and their teams over this 12-week accelerator.
+            We host weekly workshops and one-on-one sessions to connect teams to the right resources, problem solve, and answer questions.
           </p>
         </div>
       </section>
@@ -230,7 +226,7 @@ export default function Accelerator() {
 
           <ul className="list-disc pl-8 text-base md:text-lg">
             <li className="mb-4">
-              Accelerate your project to become a startup
+              We just want to fund dope shit. That's it. That's the tweet.
             </li>
             <li className="mb-4">Weekly workshops and one-on-one sessions</li>
             <li className="mb-4">
@@ -240,9 +236,6 @@ export default function Accelerator() {
             <li className="mb-4">
               Assisted by mentors, leading investors, and entrepreneurs in the
               space
-            </li>
-            <li className="mb-4">
-              After the accelerator, we help you go full-time and raise funding
             </li>
           </ul>
         </div>
