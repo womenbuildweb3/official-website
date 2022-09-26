@@ -60,7 +60,7 @@ export default function Accelerator() {
       </header>
 
       <section className="mb-12 flex flex-col sm:flex-row justify-around gap-4 max-w-6xl mx-auto">
-        <div className="sm:w-1/2 bg-zinc-800 rounded-lg p-8">
+        <div className="sm:w-1/2 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8">
           <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
             OUR WHY
           </div>
@@ -72,7 +72,7 @@ export default function Accelerator() {
           </p>
         </div>
 
-        <div className="sm:w-1/2 text-lg md:text-xl lg:text-2xl bg-zinc-800 rounded-lg p-8">
+        <div className="sm:w-1/2 text-lg md:text-xl lg:text-2xl bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8">
           <p className="mb-4 text-center font-poppins-semi-bold">
             Accelerator powered by
           </p>
@@ -83,6 +83,7 @@ export default function Accelerator() {
                 src="/logos/encode_club_white.svg"
                 height="128px"
                 width="128px"
+                className={preferedColorScheme !== "light" ? "" : "white-logo"}
               />
               <p className="text-center text-sm font-poppins-semi-bold mt-4">
                 Encode Club
@@ -91,7 +92,7 @@ export default function Accelerator() {
             <div className="flex flex-col items-center">
               <Image
                 alt="Women Build Web3 Logo"
-                src="/logos/logo-white.png"
+                src={preferedColorScheme !== "light" ? "/logos/logo-white.png" : "/logos/Logo-Fill.png"}
                 height="128px"
                 width="128px"
               />
@@ -103,7 +104,7 @@ export default function Accelerator() {
         </div>
       </section>
 
-      <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
+      <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8">
         <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
           ABOUT
         </div>
@@ -122,16 +123,16 @@ export default function Accelerator() {
       </section>
 
       <section className="pt-8 mb-12 max-w-6xl mx-auto flex flex-col sm:flex-row justify-between gap-4">
-        <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/3 flex flex-col">
+        <div className="bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8 sm:w-1/3 flex flex-col">
           <div className="text-dark-teal font-poppins-bold">
             Applications open
           </div>
           <div className="text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
-            SEPTEMBER 25TH
+            SEPTEMBER 26TH
           </div>
         </div>
 
-        <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/3 flex flex-col">
+        <div className="bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8 sm:w-1/3 flex flex-col">
           <div className="text-dark-teal font-poppins-bold">
             Accelerator begins
           </div>
@@ -140,7 +141,7 @@ export default function Accelerator() {
           </div>
         </div>
 
-        <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/3 flex flex-col">
+        <div className="bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8 sm:w-1/3 flex flex-col">
           <div className="text-dark-teal font-poppins-bold">
             Accelerator ends
           </div>
@@ -150,7 +151,7 @@ export default function Accelerator() {
         </div>
       </section>
 
-      <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
+      <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8">
         <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
           FOR YOU
         </div>
@@ -170,7 +171,7 @@ export default function Accelerator() {
         </ul>
       </section>
 
-      <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
+      <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8">
         <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
           JOIN US
         </div>
@@ -219,7 +220,7 @@ export default function Accelerator() {
       </section>
 
       <section className="pt-8 mb-12 max-w-6xl mx-auto flex flex-col sm:flex-row gap-8">
-        <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/2">
+        <div className="bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8 sm:w-1/2">
           <h3 className="mb-4 text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             Overview:
           </h3>
@@ -240,7 +241,7 @@ export default function Accelerator() {
           </ul>
         </div>
 
-        <div className="bg-zinc-800 rounded-lg p-8 sm:w-1/2">
+        <div className="bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8 sm:w-1/2">
           <h3 className="mb-4 text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
             Workshops:
           </h3>
@@ -261,7 +262,7 @@ export default function Accelerator() {
         </div>
       </section>
 
-      <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
+      <section className="pt-8 mb-12 max-w-6xl mx-auto bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8">
         <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
           WHO WE ARE
         </div>
@@ -283,7 +284,7 @@ export default function Accelerator() {
         </div>
       </section>
 
-      <section className="pt-8 mb-6 max-w-6xl mx-auto bg-zinc-800 rounded-lg p-8">
+      <section className="pt-8 mb-6 max-w-6xl mx-auto bg-zinc-100 dark:bg-zinc-800 rounded-lg p-8">
         <div className="text-dark-teal font-poppins-bold text-lg md:text-xl lg:text-2xl mb-2 sm:mb-4">
           OUR TRUSTED PARTNER
         </div>
