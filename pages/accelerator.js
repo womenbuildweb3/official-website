@@ -83,7 +83,7 @@ export default function Accelerator() {
                 src="/logos/encode_club_white.svg"
                 height="128px"
                 width="128px"
-                className="white-logo"
+                className={preferedColorScheme !== "light" ? "" : "white-logo"}
               />
               <p className="text-center text-sm font-poppins-semi-bold mt-4">
                 Encode Club
