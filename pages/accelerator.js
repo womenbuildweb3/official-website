@@ -214,7 +214,8 @@ export default function Accelerator() {
             Weekly Sessions
           </h3>
           <p className="text-base md:text-lg md:w-1/2">
-            We host weekly workshops and one-on-one sessions to connect teams to the right resources, problem solve, and answer questions.
+            Teams will attend a weekly vibes sesh to problem solve, and answer questions.
+            We will also host weekly workshops to support projects.
           </p>
         </div>
       </section>
@@ -229,7 +230,9 @@ export default function Accelerator() {
             <li className="mb-4">
               We just want to fund dope shit. That&apos;s it. That&apos;s the tweet.
             </li>
-            <li className="mb-4">Weekly workshops and one-on-one sessions</li>
+            <li className="mb-4">
+            In addition to workshops, we&apos;ll host a weekly vibe sesh that serve as a coworking space, and a time to connect with other teams and learn about the other projects in the cohort.
+            </li>
             <li className="mb-4">
               Our team will be here to help you with everything from technical
               building, design, product testing and fundraising
@@ -255,10 +258,11 @@ export default function Accelerator() {
             <li className="mb-4">Product Market Fit</li>
             <li className="mb-4">Fundraising</li>
             <li className="mb-4">AMA</li>
-            <li className="mb-4">VC Panel</li>
+            <li className="mb-4">VC Panel*</li>
             <li className="mb-4">Pitch Practice</li>
-            <li className="mb-4">Pitch Day</li>
+            <li className="mb-4">Pitch Day*</li>
           </ul>
+          <div className="px-4">*Required</div>
         </div>
       </section>
 
