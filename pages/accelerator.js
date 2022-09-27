@@ -231,7 +231,7 @@ export default function Accelerator() {
               We just want to fund dope shit. That&apos;s it. That&apos;s the tweet.
             </li>
             <li className="mb-4">
-            In addition to workshops, we&apos;ll host a weekly vibe sesh that serve as a coworking space, and a time to connect with other teams and learn about the other projects in the cohort.
+            In addition to workshops, we&apos;ll host a weekly vibes sesh that serve as a coworking space, and a time to connect with other teams and learn about the other projects in the cohort.
             </li>
             <li className="mb-4">
               Our team will be here to help you with everything from technical
