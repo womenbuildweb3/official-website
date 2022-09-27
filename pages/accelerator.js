@@ -128,7 +128,7 @@ export default function Accelerator() {
             Applications open
           </div>
           <div className="text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
-            SEPTEMBER 26TH
+            SEPTEMBER 27TH
           </div>
         </div>
 
@@ -137,7 +137,7 @@ export default function Accelerator() {
             Accelerator begins
           </div>
           <div className="text-xl md:text-2xl lg:text-3xl font-poppins-semi-bold">
-            OCTOBER 6TH
+            OCTOBER 13TH
           </div>
         </div>
 
